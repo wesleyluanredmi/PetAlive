@@ -9,7 +9,13 @@ body{
 a{
     text-decoration: none;
 }
-
+p{
+    line-height: 30px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
 /************************************************
     HEADER
 *************************************************/
@@ -17,7 +23,7 @@ a{
     width: 100%;
 }
 .header-c{
-    background-color: rgb(220, 220, 220);
+    background-color: #dcdcdc;
     max-width: 960px;
     margin: 0 auto;
     display: flex;
@@ -51,6 +57,7 @@ a{
         z-index: 1000;
         padding-bottom: 10px;
         text-align: center;
+        background-color: #dcdcdc;
     }
     .nav__link{
         display: block;
@@ -60,4 +67,43 @@ a{
     .nav.active .nav__list{
         display: block;
     } 
+}
+
+/************************************************
+    Main
+*************************************************/
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/************************************************
+    Section
+*************************************************/
+
+.introducao__titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 25px 0;
+}
+.introducao-c{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.introducao__texto{
+    flex: 1 1 300px;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 10px;
+
+}
+.introducao__img {
+    flex: 1 1 300px;
+}
+.introducao__img img {
+    margin: 0 auto
 }
